@@ -1,0 +1,151 @@
+@font-face {
+    font-family: "DejaVu";
+    src: url("../assets/font/dejavu-sans/DejaVuSans.ttf");
+}
+
+@font-face {
+    font-family: "Rey";
+    src: url("../assets/font/reey/Reey-Regular.otf");
+}
+
+@font-face {
+    font-family: "Biyi";
+    src: url("../assets/font/magic_pies/Magic-Pies.otf");
+}
+
+*{
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+
+
+/*NAV*/
+
+nav{
+    width: 100%;
+    height: 120px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: transparent;
+    transition: 0.2s;
+    transition-duration: 0.7s;
+    z-index: 999;
+}
+#section-nav-1{
+    color: whitesmoke;
+    width: 100%;
+}
+#section-nav-1 ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    font-family: sans-serif;
+    margin: 0;
+}
+
+/* //////////////////// Nav bar scrolled effect*/
+nav.nav-bar-scrolled{
+    height: 40px;
+    background: gold;
+}
+
+
+/* NAV END*/
+
+/*INTRO*/
+
+#background-intro{
+    height: 100vh;
+    width: 100%;
+    background-image: url("../assets/img/background2.jpg");
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#title-biyi{
+    width: 600px;
+    margin: 0 auto;
+    padding: 20vh  0 0 0;
+    color: whitesmoke;
+
+}
+
+#title-intro h1, #title-intro h3{
+    margin-top: 0;
+    font-family: Rey,Arial,sans-serif;
+}
+
+#title-intro h1{
+    font-size: 102px;
+}
+
+#title-intro h3{
+    margin-bottom: 0;
+    font-size: 30px;
+}
+
+#title-biyi p{
+    margin-bottom: 0;
+    color: black;
+    font-size: 30px;
+    text-align: center;
+    font-family:  sans-serif;
+}
+
+#button-intro{
+    width: 250px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 5px;
+    margin: 200px auto 0 auto;
+    font-size: 20px;
+    font-family: sans-serif;
+    border: 0;
+    background-color: gold;
+    cursor: pointer;
+    /*font-weight: 500;*/
+    transition: .5s;
+    transition-duration: .5s;
+
+}
+#button-intro:visited{
+    border: 0;
+}
+
+#button-intro:hover{
+    transform: translate3d(0, -1px,0) scale(1.04);
+    box-shadow: 0 0 20px gold;
+}
+
+
+
+/*INTRO END*/
+
+
+
+
+
