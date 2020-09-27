@@ -110,6 +110,10 @@ nav{
     background-color: rgba(255,215,0,0.5);
 }
 
+.nav-bar-scrolled #section-nav-1 ul li a{
+    color: black;
+}
+
 .nav-bar-scrolled #section-nav-1 ul li a:hover{
     background-color: rgba(218,165,32,0.5);
 }
