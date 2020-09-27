@@ -1,0 +1,57 @@
+@font-face {
+    font-family: "brush";
+    src: url("../assets/font/expedition/CFExpedition-Regular.ttf");
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+h1{
+    font-family: Brush,sans-serif;
+    margin: 0;
+    padding-top: 50px;
+    font-size: 60px;
+    color: gold;
+}
+
+h2{
+    font-family: sans-serif;
+    font-size: 1.5rem;
+}
+
+#wrapper-comic{
+    background-color: seashell;
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+#comic-resize{
+    width: 60%;
+    margin: 0 auto;
+    padding: 100px 0;
+
+}
+
+#wrapper-comic img{
+    width: 100%;
+    margin-top: 10px;
+}
+
+@media (max-width: 780px) {
+
+    #comic-resize{
+        width: 90%;
+    }
+}

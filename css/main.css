@@ -35,7 +35,6 @@ body{
     margin: 0;
     padding: 0;
     width: 100%;
-
 }
 
 html{
@@ -44,6 +43,10 @@ html{
 
 .text-important{
     color: gold;
+}
+
+.color-span{
+    color:gold ;
 }
 
 /*NAV*/
@@ -65,18 +68,50 @@ nav{
     z-index: 999;
 }
 #section-nav-1{
-    color: whitesmoke;
+    color: white;
     width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
 }
 #section-nav-1 ul {
     width: 100%;
+    height: 100%;
     display: flex;
     justify-content: space-around;
+    align-items: center;
     flex-wrap: wrap;
     list-style: none;
     padding: 0;
     font-family: sans-serif;
     margin: 0;
+}
+
+#section-nav-1 ul li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: calc(100%/7);
+    height: 100%;
+}
+
+#section-nav-1 ul li a{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .5s;
+    transition-duration: .5s;
+}
+
+#section-nav-1 ul li a:hover{
+    background-color: rgba(255,215,0,0.5);
+}
+
+.nav-bar-scrolled #section-nav-1 ul li a:hover{
+    background-color: rgba(218,165,32,0.5);
 }
 
 /* //////////////////// Nav bar scrolled effect*/
@@ -93,7 +128,7 @@ nav.nav-bar-scrolled{
 #background-intro{
     height: 100vh;
     width: 100%;
-    background-image: url("../assets/img/background2.jpg");
+    background-image: url("../assets/img/background-intro.png");
     background-size: cover;
     background-position: top;
     background-repeat: no-repeat;
@@ -101,19 +136,28 @@ nav.nav-bar-scrolled{
 }
 
 #title-biyi{
+    /*display: none;*/
     width: 600px;
     margin: 0 auto;
-    padding: 17vh  0 0 0;
-    color: whitesmoke;
+    padding: 25vh  0 0 0;
+    color: black;
 }
+
+#wrapper-title{
+    padding: 16px;
+    /*background-color: rgba(0, 94, 124, 0.4);*/
+
+}
+
 
 #title-intro h1, #title-intro h3{
     margin-top: 0;
     font-family: Brush,Rey,Arial,sans-serif;
+    color: white;
 }
 
 #title-intro h1{
-    font-size: 120px;
+    font-size: 113px;
     margin-top: -30px;
     margin-bottom: 10px;
 }
@@ -129,13 +173,14 @@ nav.nav-bar-scrolled{
     font-size: 30px;
     text-align: center;
     font-family:  sans-serif;
+    font-weight: bold;
 
 }
 
 #button-intro{
     width: 250px;
     height: 50px;
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: space-around;
     border-radius: 5px;
@@ -408,7 +453,7 @@ nav.nav-bar-scrolled{
 }
 
 #interlude2{
-    background-image: url("../assets/img/interlude2.jpg");
+    background-image: url("../assets/img/interlude3.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -416,7 +461,7 @@ nav.nav-bar-scrolled{
 
 
 #interlude3{
-    background-image: url("../assets/img/interlude3.jpg");
+    background-image: url("../assets/img/interlude2.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -441,12 +486,65 @@ nav.nav-bar-scrolled{
 }
 
 #content-legende-text{
-    width: 40%;
+    width: 55%;
 }
 
 #button-bd{
     margin: auto auto auto auto;
+    background-image: url("../assets/img/button-manga.jpg");
+    background-size: cover;
+    border-radius: 50%;
+    padding: 80px;
+    border: 5px solid black;
+
 }
+
+#button-bd p {
+    font-size: 35px;
+    font-weight: bold;
+    border: 3px solid white;
+    padding: 16px;
+    font-family: sans-serif;
+    background-color: rgba(0,0,0,0.5);
+    transition: .5s;
+    transition-duration: .5s;
+}
+#button-bd p:hover{
+    background-color: black;
+}
+
+#button-bd:first-child:first-child:hover{
+    background-color: black;
+}
+
+#warpper-text-button-bd{
+    width: 270px;
+    height: 270px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/*#button-bd .buttons-play, #button-bd .buttons-play p{*/
+/*    background-color: transparent;*/
+/*    box-shadow: none;*/
+/*}*/
+/*#button-bd .buttons-play p {*/
+/*    !*margin-top: -300px;*!*/
+/*    !*color: black;*!*/
+/*    border: 3px solid black;*/
+/*    background-color: rgba(0, 0, 0, 0.5);;*/
+/*    color: whitesmoke;*/
+/*    font-size: 15px;*/
+/*    font-weight: bold;*/
+/*}*/
+
+/*#button-bd .buttons-play i {*/
+/*    color: black !important;*/
+/*    display: none;*/
+/*}*/
+
 
 #icon-bd{
     margin: auto;
@@ -462,19 +560,19 @@ nav.nav-bar-scrolled{
 }
 
 #legende-text::-webkit-scrollbar{
-    height: 1px;
-    width: 1px;
+    height: 3px;
+    width: 7px;
     /*border-radius: 5px;*/
-    border: 1px solid black;
+    border: 1px solid lightgray;
+    background-color: seashell;
     float: left;
 
 }
 #legende-text::-webkit-scrollbar-thumb:vertical{
-    direction: ltr;
     background-color: gold;
     /*border-radius: 5px;*/
-    width: 20%;
-    box-shadow: 5px 5px 10px grey;
+    width: 7px;
+    /*box-shadow: 5px 5px 10px grey;*/
     cursor: pointer;
 }
 
@@ -571,10 +669,10 @@ nav.nav-bar-scrolled{
 
 
 .box-partners{
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
     border: 1px solid #181818;
-    margin: 60px;
+    margin: 80px 10px 80px 10px;
     background-color: white;
     text-align: center;
     cursor: pointer;
@@ -588,8 +686,13 @@ nav.nav-bar-scrolled{
     /*border-radius: 10px;*/
 }
 
-#ludendi-logo img{
+.ludendi-logo img{
     margin-top: 25%;
+}
+
+.kudos-logo img{
+    margin-top: 30%;
+    width: 90%;
 }
 
 
@@ -604,7 +707,7 @@ nav.nav-bar-scrolled{
 }
 
 #button-go-intro{
-    margin-left: 46%;
+
     width: 70px;
     height: 60px;
     background-color: gold;
@@ -657,8 +760,18 @@ nav.nav-bar-scrolled{
     border-radius: 5px;
     cursor: pointer;
     margin: 16px 0 16px 0;
+    transition: .5s;
+    transition-duration: .5s;
 }
 
+#contact-button-links a button:hover:first-child{
+    background-color: rgba(255,215,0,0.5);
+}
+
+
+.wrapper-button-contact{
+    text-align: center;
+}
 
 /* Contact Section END*/
 
@@ -818,3 +931,5 @@ nav.nav-bar-scrolled{
     transform: translateX(0);
     opacity: 100;
 }
+
+

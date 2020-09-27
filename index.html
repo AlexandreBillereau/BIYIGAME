@@ -4,23 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <title>Document</title>
+    <title>BiyiGames</title>
+    <link rel="icon" href="assets/img/fav.png">
 
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <link rel="stylesheet" href="assets/fontawesome/css/all.css">
     <link rel="stylesheet" href="css/splide.min.css">
     <link rel="stylesheet" href="css/phone.css">
+
+    <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
 </head>
 <body>
     <nav id="nav">
         <div id="section-nav-1">
             <ul>
-                <li><a href="#background-intro">Accueil</a></li>
-                <li><a href="#section-game">Jeu</a></li>
+                <li><a href="#background-intro">Home</a></li>
+                <li><a href="#section-game">Game</a></li>
                 <li><a href="#section-legende">Legend</a></li>
                 <li><a href="#section-studio">Studio</a></li>
                 <li><a href="#section-club">Club</a></li>
-                <li><a href="#section-thanks">Remerciements</a></li>
+                <li><a href="#section-thanks">Acknowledgements</a></li>
+                <li><a href="index_fr.html">FR</a></li>
             </ul>
         </div>
         <div class="toggle">
@@ -32,27 +36,29 @@
     <div class="toggle-nav">
         <div class="toggle-section-1">
             <ul>
-                <li><a href="#background-intro" onclick="CloseToggle();">Accueil</a></li>
-                <li><a href="#section-game" onclick="CloseToggle();">Jeu</a></li>
-                <li><a href="#section-legende" onclick="CloseToggle();">Legende</a></li>
+                <li><a href="#background-intro" onclick="CloseToggle();">Home</a></li>
+                <li><a href="#section-game" onclick="CloseToggle();">Game</a></li>
+                <li><a href="#section-legende" onclick="CloseToggle();">Legend</a></li>
                 <li><a href="#section-studio" onclick="CloseToggle();">Studio</a></li>
                 <li><a href="#section-club" onclick="CloseToggle();">Club</a></li>
-                <li><a href="#section-thanks" onclick="CloseToggle();">Remerciements</a></li>
+                <li><a href="#section-thanks" onclick="CloseToggle();">Acknowledgements</a></li>
             </ul>
         </div>
         <div class="toggle-section-2">
             <ul>
-                <li><a href="">ENGLISH</a></li>
+                <li><a href="index_fr.html">French</a></li>
             </ul>
         </div>
     </div>
     <section id="background-intro">
         <div id="title-biyi">
-            <div id="title-intro">
-                <h3>Welcome to</h3>
-                <h1>BiyiGames</h1>
+            <div id="wrapper-title">
+                <div id="title-intro">
+                    <h3>Welcome to</h3>
+                    <h1>BiyiGames</h1>
+                </div>
+                <p id="text-title-intro">An independant boardgame company based in Montreal</p>
             </div>
-            <p id="text-title-intro">independant boardgame company based in Montreal</p>
         </div>
         <button id="button-intro"><a href="#section-game">Explore our games ! </a></button>
     </section>
@@ -61,21 +67,25 @@
     <section class="section-slide" id="section-game">
         <div class="wrapper-section">
             <div>
-                <h1 class="title-game"> <span style="color: gold">Le</span> jeux</h1>
-                <h1 class="title-game">Biyi<span style="color: gold">.</span></h1>
+                <h1 class="title-game"> <span class="color-span">The</span> Game</h1>
+                <h1 class="title-game">Biyi<span class="color-span">.</span></h1>
             </div>
             <div class="content-slide-section" >
                 <article  >
                     <div class="all-article" >
                         <p>
-                            Biyi est un jeu de stratégie pour deux joueurs où l’objectif est d’atteindre le nid de l’oiseau dans le camp d’en face. Pour y parvenir, vous devrez traversez la rivière Salouen et vous frayer un chemin dans la défense adverse, en bloquant et en utilisant les pièces de l’adversaire.
+                            Biyi is a strategy game for two players whose goal is to reach the bird’s nest in the opposite
+                            camp. To get there, you will have to cross the Salouen River and make your way into the
+                            opposing defense, blocking and using the opponent’s pieces.
                         </p>
 
                         <p>
-                            Les pièces sont des jetons et des piles de jetons qui se transforment au cours du jeu. La mécanique de Biyi impose aux joueurs de prendre en compte les trois dimensions.
+                            Pieces are tokens and stacks of tokens that transform during the game. The mechanics of Biyi
+                            require players to take into account the three dimensions.
                         </p>
                         <p>
-                            Biyi fut créé par le pédagogue Jérôme Mariaud de Serre et le mathématicien Raphaël-James Lebel en 2019.
+                            Biyi was created by educationist Jérôme Mariaud de Serre and mathematician Raphaël-James
+                            Lebel in 2019.
                         </p>
                     </div>
                 </article>
@@ -85,13 +95,10 @@
                         <div class="splide__track">
                             <ul class="splide__list">
                                 <li class="splide__slide">
-                                    <img src="assets/img/background1.jpg">
+                                    <img src="assets/img/TheGame/boiteBiyi.jpg">
                                 </li>
                                 <li class="splide__slide">
-                                    <img src="assets/img/img2.jpg">
-                                </li>
-                                <li class="splide__slide">
-                                    <img src="m03.jpg">
+                                    <img src="assets/img/TheGame/IMG_1240.jpg">
                                 </li>
                             </ul>
                         </div>
@@ -107,37 +114,33 @@
     <section id="section-play" style="">
 
         <div id="foreground-play">
-            <h1 class="title-play">Comment<span style="color: gold"> Jouer.</span></h1>
+            <h1 class="title-play">How to<span class="color-span"> Play.</span></h1>
             <article>
-                <div id="text-play">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusamus ad alias aliquam deserunt
-                    doloremque est nam necessitatibus, omnis quas quia quisquam, recusandae similique, veniam vero
-                    voluptate voluptates! Perspiciatis, reprehenderit.
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusamus ad alias aliquam deserunt
-                    doloremque est nam necessitatibus, omnis quas quia quisquam, recusandae similique, veniam vero
-                    voluptate voluptates! Perspiciatis, reprehenderit.
+                <div id="text-play">
+                    Biyi is a strategy boardgame for two players. that has the particularities of taking into account the horizontal and vertical, of keeping the same number of pieces on the board throughout the game and of seeing the pieces form and transform as the moves go by. You have to make your way forward by blocking or using the opponent’s pieces.
                 </div>
             </article>
             <div class="content-buttons-play">
-                <a href="data:assets/img/background-play.jpg" download="background-play.jpg">
+                <a href="assets/img/fav.png" download>
                     <div class="buttons-play" id="button-download">
                         <i class="fa fa-file-pdf fa-4x" style="color: white"></i>
-                        <p>RÉGLES</p>
+                        <p>Rules</p>
                     </div>
                 </a>
-                <a href="">
+                <a href="https://www.youtube.com/watch?v=aA-XVTE2O-Q&ab_channel=Biyigames" target="_blank">
                     <div class="buttons-play" id="button-youtube">
                         <i class="fa fa-play fa-4x" style="color: white"></i>
-                        <p>REGARDER</p>
+                        <p>Watch</p>
                     </div>
                 </a>
                 <div class="spacing-play"></div>
                 <div class="content-link-play">
                     <div class="links-play" id="link-tabletop">
 
-                        <a href="#"><i class="fas fa-link link-icon"></i>LIEN VERS TABLETOP SIMULATOR</a>
+                        <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2241115185&searchtext=biyi" target="_blank"><i class="fas fa-link link-icon"></i>LINK TO TABLETOP SIMULATOR</a>
                     </div>
                     <div class="links-play" id="link-BOARDGAME">
-                        <a href="#"><i class="fas fa-link link-icon"></i>LIEN VERS BOARDGAMEARENA</a>
+                        <a href="#"><i class="fas fa-link link-icon"></i>LINK TO BOARDGAMEARENA</a>
                     </div>
                 </div>
             </div>
@@ -153,78 +156,75 @@
 <!--    La Légende-->
     <section class="section-slide" id="section-legende">
         <div>
-            <h1 class="title-game"> <span style="color: gold">La</span> Legende.</h1>
+            <h1 class="title-game"> <span class="color-span">The</span> Legend.</h1>
         </div>
 
         <div class="content-slide-section">
             <article id="content-legende-text">
                 <div class="all-article" id="legende-text">
                     <p>
-                        L’empereur des Han qui avait perdu son épouse, retrouve l’impératrice Yang dans la montagne
-                        magique, et tous deux se transforment en biyi, deux oiseaux à une aile au vol inséparable.
+                        The Han emperor, who had lost his wife, finds Empress Yang in the magic mountain, and both
+                        transform into Biyi, two birds with an inseparable wing.
                     </p>
                     <p>
-                        De son vol puissant, le Biyi assure prospérité dans la vallée du Yunnan.
+                        From its powerful flight, Biyi ensures prosperity in the valley of Yunnan.
                     </p>
                     <p>
-                        Les villages de la vallée vivaient en harmonie jusqu’au jour où des compagnies minières et
-                        forestières approchaient de plus en plus, exploitant les terres et les forêts de la vallée.
+                        The villages of the valley lived in harmony until the day when mining and forestry companies
+                        approached more and more, exploiting the lands and forests of the valley.
                     </p>
                     <p>
-                        Le Biyi apparut furieux en majesté dans le ciel, mais soudain un drone Feihong le percute.
+                        Biyi appeared as a furious majesty in the sky, but suddenly a Feihong drone hits him.
                     </p>
                     <p>
-                        Les deux oiseaux à une aile séparés par le choc tombèrent chacun dans un village de part et
-                        d’autre de la Salween. Les villageois les soignent.
+                        The two birds with one wing separated by the impact fell each in a village on either side of the
+                        Salween. The villagers took care of them.
                     </p>
                     <p>
-                        C’est alors que les oiseaux se transforment, apparait soudain l’empereur des Han qui dit au chef
-                        du village de Bei : «Nous ne pouvons plus protéger la vallée, le village qui nous réunira de
-                        nouveau avec ma douce Yang, ce village seul sera assuré d’avoir de belles récoltes pour les
-                        années à venir. Nous y ferons notre nid. Comme des dragons vous progresserez au-delà du fleuve,
-                        allant les uns sur les autres, sans vous entretuez et pour le retour...».
-                        Au village de Nan, l’impératrice Yang apparait au chef du village continue le discours de
-                        l’empereur : «... faites-vous des ailes. Un de vous volera au-dessus de la Salween aux côtés de
-                        mon empereur, jusqu’à moi».
+                        It was then that the birds transformed, and suddenly appeared the Han emperor who told the
+                        chief of the village of Bei: &quot;We can no longer protect the valley, the village that will reunite us
+                        again with my sweet Yang, this village alone will be sure to have good harvests for years to
+                        come. We’ll make our nest there. Like dragons you will progress across the river, going over each
+                        other, without killing each other and for the return…”
                     </p>
                     <p>
-                        Chacun redevient oiseau à une aile et se blottit dans son nid.
-                        Les villageois se fabriquent des ailes qu’ils s’attachent dans le dos, certains restent près du nid,
-                        d’autres se jettent en avant vers le fleuve, les uns sur les autres.
+                        In the village of Nan, Empress Yang appears to the head of the village and continues the
+                        emperor’s speech: &quot;… make yourselves wings. One of you will fly over the Salween alongside my
+                        emperor, to me.&quot;
                     </p>
                     <p>
-                        Yang, en lévitation sur un plateau de jeu, se tourne vers un vieillard :
-                        «Toi Shouxing, étoile de la longévité, c’est toi qui dans ce jeu laisse les pièces vivre sur le
-                        plateau, pour plutôt se frayer un passage jusqu’au nid, comme dans un labyrinthe mouvant à 91
-                        cases. Alors pour moi, trouve la voie, Shouxing.»
+                        Each one becomes a bird with one wing and nestles in its nest.
                     </p>
                     <p>
-                        «91 était l’âge de ce jeune Zaho Yan qui devait mourir à 19 ans... je n’ai eu qu’à permuter les
-                        chiffres en échange d’un bon vin» dit Shouxing, dieu de la longévité
-                        L’empereur des Han lévite également, il se tourne vers l’autre vieillard:
+                        The villagers make wings that they attach to their back, some stay close to the nest; others
+                        throw themselves towards the river, one on top of the other.
                     </p>
                     <p>
-                        «Toi Luxing, étoile de l’honneur, toi qui fus au service de mon ancêtre, vois comme les pièces du
-                        jeu changent d’état. Tout s’y transforme et grandit comme l’enfant que tu portes, les pièces se
-                        superposent, s’imbriquent et s’enchevêtrent comme fait la nature. Alors pour moi, va compléter
-                        l’incomplet Luxing».
+                        Yang, levitating on a playing board, turns to an old man: You, Shouxing, star of longevity, it is you
+                        who in this game lets the pieces live on the board in order to make your way to the nest, as in a
+                        moving maze of 91 squares. So for me, find the way, Shouxing.&quot; &quot;91 was the age of this young
+                        Zaho Yan who ought to die at 19… I only had to swap the numbers in exchange for a good wine,&quot;
+                        said Shouxing, god of longevity.
                     </p>
                     <p>
-                        «le vin de Zhao Yan est si bon que la cruche est toujours à moitié pleine» dit Luxing, dieu de
-                        l’abondance.
+                        The Han emperor, who is also levitating, turns to the other old man:
+                        &quot;You, Luxing, star of honour, you who served my ancestor, see how the pieces of the game
+                        change status. Everything changes and grows like the child you carry; the pieces overlap, fit
+                        together and intertwine as nature does. So go for me and complete the incomplete Luxing.&quot;
+                        &quot;Zhao Yan’s wine is so good that the jug is always half full&quot;, says Luxing, the god of abundance.
                     </p>
                     <p>
-                        Shouxing, joue avec Luxing, sous un mûrier.
-                        Luxing dit : «Biyi!» Il prend le «jeton-oiseau» de Shouxing, qui, une coupe en main, avait l’air
-                        un peu éméché, et Luxing le place sur le sien.
-                        Le Biyi sort du mûrier et vole au loin
+                        Shouxing plays with Luxing, under a mulberry tree.
+
+                        Luxing says: &quot;Bixi!&quot; He takes Shouxing’s &quot;token-bird&quot;, which, with a cup in hand, looked a little
+                        drunk, and Luxing places it on his token.
+                        Biyi comes out of the mulberry tree and flies away.
                     </p>
                 </div>
             </article>
-            <a href="" id="button-bd">
-                <div class="buttons-play" >
-                    <i class="fa fa-book-open fa-4x" id="icon-bd" style="color: white"></i>
-                    <p>MANGA</p>
+            <a href="comic.htm" target="_blank" id="button-bd">
+                <div id="warpper-text-button-bd">
+                    <p>Read manga</p>
                 </div>
             </a>
 
@@ -245,21 +245,25 @@
     <section class="section-slide" id="section-studio">
         <div>
             <h1 class="title-game"> BiyiGames</h1>
-            <h1 class="title-game"> <span style="color: gold">Studio</span>. </h1>
+            <h1 class="title-game"> <span class="color-span">Studio</span>. </h1>
         </div>
 
         <div class="content-slide-section"  >
             <article  >
                 <div class="all-article" >
                     <p>
-                        BiyiGames est un studio indépendant situé à Montréal.
-                        Le studio s’appuie sur une équipe de passionnés, qui pilotent des ateliers cognitifs dans la compagnie Kit Focus depuis 2011. C’est au sein de ces ateliers que furent créés des dizaines de jeux: des jeux de mémoire, des jeux de lettres, des jeux d’adresse, et bien sûr des jeux abstraits et de stratégie.
+                        BiyiGames is an independent studio located in Montreal.
+                        The studio relies on a team of enthusiasts, who have been leading cognitive workshops in Kit
+                        Focus since 2011. It is within these workshops that dozens of games were created: memory
+                        games, letter games, skill games, and of course abstract and strategic games.
                     </p>
                     <p>
-                        Biyigames édite ces jeux qui sont testés et améliorés tous les jours, en les développant et en les portant à un autre niveau avec des game designers chevronnés.
+                        BiyiGames edits these games that are tested and improved every day, developing them and
+                        taking them to another level with experienced game designers.
                     </p>
                     <p>
-                        La mission responsable de BiyiGames est d’offrir des jeux performants et évolutifs, avec un matériel le plus minimaliste possible, et c’est ça la beauté!
+                        The mission of BiyiGames is to offer high-performance and evolving games, with the most
+                        minimalist material possible, and that’s the beauty of it!
                     </p>
                 </div>
             </article>
@@ -269,13 +273,19 @@
                     <div class="splide__track">
                         <ul class="splide__list">
                             <li class="splide__slide">
-                                <img src="assets/img/background2.jpg">
+                                <img src="assets/img/studio/IMG_7950.jpg">
                             </li>
                             <li class="splide__slide">
-                                <img src="assets/img/background2.jpg">
+                                <img src="assets/img/studio/jetons%20trotec.jpg">
                             </li>
                             <li class="splide__slide">
-                                <img src="assets/img/background2.jpg">
+                                <img src="assets/img/studio/fabrication%20des%20tablettes%20atelier%20(1).jpg">
+                            </li>
+                            <li class="splide__slide">
+                                <img src="assets/img/studio/IMG_5116.jpg">
+                            </li>
+                            <li class="splide__slide">
+                                <img src="assets/img/studio/Sophie%20fabrique%20rak%20pour%20jetons.jpg">
                             </li>
                         </ul>
                     </div>
@@ -288,22 +298,23 @@
 <!--  section club  -->
     <section class="section-slide" id="section-club">
         <div>
-            <h1 class="title-game"> <span style="color: gold">Le</span> Club. </h1>
+            <h1 class="title-game"> <span class="color-span">The</span> Club. </h1>
         </div>
 
         <div class="content-slide-section"  >
             <article  >
                 <div class="all-article" >
                     <p>
-                        Tous les samedis se réunissent plusieurs joueurs au club Biyi de Montréal.
-                        Le club peut accueillir une vingtaine de joueurs de tous âges entre 17h et 20h.
+                        Every Saturday, several players meet at the Biyi Club in Montreal.
+                        The Club can accommodate twenty players of all ages between 5 pm and 8 pm.
                     </p>
                     <p>
-                        Des tournois et des compétitions sont attendues au cours de l’année 2021.
-                        Un classement sera disponible prochainement.
+                        Tournaments and competitions are expected in 2021.
+                        A ranking will be available soon.
                     </p>
                     <p>
-                        Si vous désirez monter et ouvrir un club de Biyi dans votre ville, vous pouvez nous contacter, nous serons ravis de vous accompagner dans vos démarches.
+                        If you want to set up and open a Biyi Club in your city, you can contact us, we will be happy to
+                        accompany you in your efforts.
                     </p>
                 </div>
             </article>
@@ -313,13 +324,19 @@
                     <div class="splide__track">
                         <ul class="splide__list">
                             <li class="splide__slide">
-                                <img src="assets/img/background2.jpg">
+                                <img src="assets/img/club/73DA38BB-0E4B-4941-9694-E8794F25A450_1_105_c.jpeg">
                             </li>
                             <li class="splide__slide">
-                                <img src="assets/img/background2.jpg">
+                                <img src="assets/img/club/18A9A968-188E-4F0F-AB6B-915457C580A8.jpeg">
                             </li>
                             <li class="splide__slide">
-                                <img src="assets/img/background2.jpg">
+                                <img src="assets/img/club/IMG_5123.jpg">
+                            </li>
+                            <li class="splide__slide">
+                                <img src="assets/img/club/IMG_0417.jpg">
+                            </li>
+                            <li class="splide__slide">
+                                <img src="assets/img/club/IMG_5128.jpg">
                             </li>
                         </ul>
                     </div>
@@ -333,45 +350,63 @@
 <!--    author words-->
     <section id="section-thanks">
         <div>
-            <h1 class="title-game"><span style="color: gold">Le mot</span> de l’auteur </h1>
+            <h1 class="title-game">Author<span style="color: gold"> Words</span>  </h1>
             <h1 class="title-game" id="nom-thanks">Jérôme Mariaud de Serre <span style="color: gold">.</span></h1>
         </div>
         <div id="wrapper-thanks-box">
             <div class="thanks-box" id="thank-box-main">
                 <p>
-                    Biyi c’est un jeu où le hasard n’a pas sa chance.
-                    Et plutôt qu’éliminer les pièces de l’adversaire, se dessine une sorte de labyrinthe mouvant.
+                    Biyi is a game where chance does not stand a chance.
+                    Rather than eliminating the opponent’s pieces, a sort of moving maze emerges.
+                    A game where two sides engage in battle, without taking, dying and leaving the board; it is a
+                    game that is both ultra-competitive and at the same time that invites a form of concordance and
+                    dialogue.
                 </p>
                 <p>
-                    Un jeu où deux camps se livrent bataille, sans qu’il y ait de prise, de mort et de sortie de plateau, c’est un jeu à la fois ultra-compétitif et à la fois qui invite à une forme de concordance et de dialogue.
-                    Biyi c’est une joute dans un espace légendaire, où chacun se bat, avec l’autre, et comme en Aïkido, pour «mettre les coeurs ensemble».
+                    Biyi is a joust in a legendary space, where each one fights, with the other, and as in Aikido, to
+                    &quot;combine hearts together&quot;.
                 </p>
                 <p>
-                    Tout dans la boîte Biyi rappelle cette concordance: les jetons qui se superposent, les plateaux qui s’aimantent, la transparence des jetons-oiseaux, les ailes des villageois qui ne forment qu’un, la rivière Salouen qui sépare et unit les deux villages, les planches graphiques de Dali Wu qui crée par une superposition et simultanéité des événements une profondeur d’image telle, que notre regard s’extrait du réel.
+                    Everything in the box Biyi recalls this concordance: the overlapping tokens, the magnetized
+                    boards, the transparency of the bird-tokens, the wings of the villagers that form only one, the
+                    river Salouen that separates and unites the two villages, the graphic plates of Dali Wu which
+                    create by superposition and simultaneity events with a depth of image such that our gaze is
+                    extracted from the real world.
                 </p>
                 <p>
-                    À nouveau, la concordance s’exprime dans cette recherche d’unir un jeu abstrait à un récit de légende, un pari que BiyiGames tente de relever et de gagner.
-                </p>
-            </div>
-            <div class="thanks-box">
-                <p>
-                    <span class="thanks-important">Je remercie mon co-auteur Raphaël-James Lebel</span> qui de suite a vu le potentiel d’un tel jeu. Raphaël-James, mathématicien, l’a porté a un tel niveau après des mois de recherche, que l’équilibre entre la défense et l’attaque est parfait. Je lui apporte toute mon admiration et ma reconnaissance.
-                </p>
-            </div>
-            <div class="thanks-box">
-                <p>
-                    <span class="thanks-important">Je remercie mon fils François-Mathieu</span>, étudiant en architecture, qui a dessiné la boîte Biyi, avec un soucis d’harmonie dans les lignes et les dimensions. François-Mathieu a trouvé la légèreté et le côté escamotable que nous recherchions. Il voit la boîte telle une boîte à secrets, comme un privilège.
+                    Again, concordance is expressed in this quest to combine an abstract game with a legend story, a
+                    bet that BiyiGames is willing to accept and win.
                 </p>
             </div>
             <div class="thanks-box">
                 <p>
-                    <span class="thanks-important">Je remercie Dali Wu</span>, pour son talent et l’énergie investie en recherche et dans l’exécution de son trait. Dali est une artiste totale, et de par son exigence, elle atteint des sommets et des profondeurs pas possibles. Par une mise place originale des motifs, un choix de couleurs explosives et par la transparence, elle tente un pari graphique au-delà de nos espérances.
+                    <span class="thanks-important">I would like to thank my co-author Raphaël-James Lebel</span>  who immediately saw the potential of
+                    such a game. Raphaël-James, a mathematician, took it to such a level after months of research
+                    that the balance between defense and attack is perfect. I offer him my admiration and gratitude.
+                </p>
+            </div>
+            <div class="thanks-box">
+                <p>
+                    <span class="thanks-important">I would like to thank my son François-Mathieu,</span> a student in architecture, who designed the Biyi
+                    box, with a concern for harmony in lines and dimensions. François-Mathieu found the lightness
+                    and the retractable side we were looking for. He sees the box as a secret box, as a privilege.
+                </p>
+            </div>
+            <div class="thanks-box">
+                <p>
+                    <span class="thanks-important">I would like to thank Dali Wu,</span> for her talent and energy invested in the research and execution of
+                    his stroke. Dali is a true artist, and because she is demanding, she reaches heights and depths not
+                    even thought possible. Through an original placement of the patterns, a choice of explosive
+                    colors and through transparency, she tried a graphic bet beyond our expectations.
                 </p>
 
             </div>
             <div class="thanks-box">
                 <p>
-                   <span class="thanks-important"> Je remercie ma femme Natalia</span>, qui accompagne le projet depuis mes premières trouvailles. Elle a su croire en quelque chose, immédiatement. Elle a su décider des choix dans tous les aspects du jeu, des règles, de la boîte et de la légende. En un mot, avec elle, Biyi vole plein le ciel et pour longtemps.
+                   <span class="thanks-important"> I would like to thank my wife Natalia,</span> who has been with the project since its beginning. She
+                    was able to believe in something immediately. She knew how to make a decision in all aspects of
+                    the game, the rules, the box and the legend. In a word, with her, Biyi flies in full sky and for a
+                    long time.
                 </p>
             </div>
         </div>
@@ -381,43 +416,63 @@
 <!--    Section Partenais-->
     <section id="section-partners">
         <div>
-            <h1 class="title-game">Nos<span style="color: gold"> Partenaires.</span></h1>
+            <h1 class="title-game">Our<span class="color-span"> Partners.</span></h1>
         </div>
         <div class="wrapper-partners">
-            <div class="box-partners" id="ludendi-logo">
-                <img src="assets/img/logoPartners/logo_ludendi.png">
+
+            <div class="box-partners ludendi-logo">
+                <a href="http://ludendi.fr/" target="_blank">
+                    <img src="assets/img/logoPartners/logo_ludendi.png">
+                </a>
             </div>
+
+
+
             <div class="box-partners">
-                <img src="assets/img/logoPartners/logo_PME.jpg">
+                <a href="https://pmemtl.com/" target="_blank">
+                    <img src="assets/img/logoPartners/logo_PME.jpg">
+                </a>
             </div>
-            <div class="box-partners">
-                <img src="assets/img/logoPartners/logo_kitfocus.png">
+
+
+
+            <div class="box-partners" >
+                <a href="http://kitfocus.ca/" target="_blank">
+                    <img src="assets/img/logoPartners/logo_kitfocus.png">
+                </a>
             </div>
+
+            <div class="box-partners kudos-logo">
+                <a href="https://www.kudos.com/" target="_blank">
+                    <img src="assets/img/logoPartners/LOGO_KUDOS_SOLO_WEB.png">
+                </a>
+            </div>
+
         </div>
     </section>
 
 <!--   Contact section -->
     <section id="contact-section">
-        <button id="button-go-intro" onclick="window.location.href='#background-intro'"><i class="fa fa-chevron-up fa-2x"></i><p>TOP</p></button>
+        <div class="wrapper-button-contact">
+            <button id="button-go-intro" onclick="window.location.href='#background-intro'"><i class="fa fa-chevron-up fa-2x"></i><p>TOP</p></button>
+        </div>
         <h1 id="contact-title">Contact</h1>
         <div id="wrapper-contact">
             <div id="contact-link">
                 <ul>
-                    <li>Public number</li>
-                    <li>Adress</li>
-                    <li>Email</li>
-                    <li>phone number</li>
+                    <li>5336 chemin Queen Mary H3X 1T7 Mtl, qc, canada</li>
+                    <li>jerome@biyigames.com</li>
                 </ul>
             </div>
             <div id="contact-button-links">
-                <a >
+                <a  href="https://www.facebook.com/BiyiGames/" target="_blank">
                 <button class="button-contact"><i class="fab fa-facebook-f fa-2x"></i></button>
                 </a>
-                <a>
+                <a href="https://twitter.com/BiyiGames" target="_blank">
                     <button class="button-contact"><i class="fab fa-twitter fa-2x"></i></button>
 
                 </a>
-                <a>
+                <a href="https://www.youtube.com/channel/UCgtzw23WynFUlkK0PnGW1Zg" target="_blank" >
                     <button class="button-contact"><i class="fab fa-youtube fa-2x"></i></button>
                 </a>
             </div>

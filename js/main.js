@@ -1,5 +1,11 @@
-window.onscroll = function(){
 
+/*
+ * Function for Nav bar
+ * id : nav , its all elements into nav tag
+ * This function add a name class to the class list when the user scroll
+ * after that all the animation is in the css.
+ */
+window.onscroll = function(){
     let navBar = document.getElementById('nav');
 
     if ( window.scrollY > 0 ){
@@ -10,22 +16,73 @@ window.onscroll = function(){
 }
 
 
+/*
+ * This function Create the slider in function of display user/ screen user.
+ * Look documentation splide js
+ * https://splidejs.com/
+ */
 document.addEventListener( 'DOMContentLoaded', function () {
 
     let slider = document.getElementsByClassName('image-slider');
-    for ( let i = 0; i < slider.length ; i ++){
-        new Splide( slider[i], {
-            'heightRatio': 0.5,
-            'width': 600,
-            'height': 400,
-            'cover': true,
-            'drag': true,
-        } ).mount();
-    }
 
+    imagesLoaded( slider, function(){
+
+        if(document.documentElement.clientWidth >= 640 && document.documentElement.clientWidth <= 1340){
+
+            for ( let i = 0; i < slider.length ; i ++){
+                new Splide( slider[i], {
+                    'heightRatio': 0.5,
+                    'width': 600,
+                    'height': 400,
+                    'cover': true,
+                    'drag': true,
+                } ).mount();
+            }
+        }else if (document.documentElement.clientWidth < 400 ){
+
+            for ( let i = 0; i < slider.length ; i ++){
+                new Splide( slider[i], {
+                    'heightRatio': 0.5,
+                    'width': 300,
+                    'height': 200,
+                    'cover': true,
+                    'drag': true,
+                } ).mount();
+            }
+        }else if ( document.documentElement.clientWidth > 1400){
+
+            for (let i = 0; i < slider.length; i++) {
+                new Splide(slider[i], {
+                    'heightRatio': 0.5,
+                    'width': 750,
+                    'height': 500,
+                    'cover': true,
+                    'drag': true,
+                }).mount();
+            }
+
+        } else {
+
+            for (let i = 0; i < slider.length; i++) {
+                new Splide(slider[i], {
+                    'heightRatio': 0.5,
+                    'width': 400,
+                    'height': 250,
+                    'cover': true,
+                    'drag': true,
+                }).mount();
+            }
+        }
+
+    });
 } );
 
 
+/* *************************
+ * This part of js is for the phone toggle nav.
+ *  - All the functions just add class to the classList elements.
+ *    after that all the animation will be manage in the css.
+ * *************************/
 const menuBtn = document.querySelector('.toggle-content');
 const toggle_nav = document.querySelector('.toggle-nav');
 const tog_section = document.querySelector('.toggle-section-1');
